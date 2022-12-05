@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rentals - Zopamo</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+
+
+
+    <link rel="stylesheet" href="glb-style.css">
+    <link rel="stylesheet" href="glb-responsive.css">
+
+    <link rel="stylesheet" href="carsearch.css">
+    <link rel="stylesheet" href="home-styles.css">
+
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- -----------Start of Header--------- -->
+    <div class="header">
+        <div class="Zopamologo vertical-center">
+            <!--Store Name-->Zopamo<br class="responsive">
+            <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: 500;">Cars | Ongole</span>
+        </div>
+        <div class="nav-bar">
+
+        </div>
+
+        <div id="sidebar">
+            <ul>
+                <h2>Zopamo</h2>
+              <a href="#top"><img class="merge-icon" width="25px" height="25px" src="https://zopamo.com/Easy-Attendance-vit/images/merge-icon-black.png" alt="M">&nbsp;&nbsp;&nbsp;Merge Tool</a>
+              <a href="#How-to-work-with-tool"><i class="far fa-question-circle"></i>&nbsp;&nbsp;&nbsp;How it Works</a>
+              <a href="#dev-info"><i class="fas fa-code"></i>&nbsp;&nbsp;&nbsp;Dev Info</a>
+            </ul>
+        </div>
+        <div id="sidebar-btn responsive">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- -----------End of Header--------- -->
+
+
+    <div class="body-main"><br/>
+        <div class="body-content">
+            <!-- <h1 class="Content-head">Self Driven Rental Cars</h1><br/><br/> -->
+
+            <div class="searchcars">
+                <div class="car-search-filters col1">
+                    <div class="filter-section">
+                        <h2>Filters</h2>
+                        <hr class="filter-hr">
+                        <br/>
+
+                        <form action="#" method="get">
+                            <label class="filter-label">Free Distance</label>
+                            <div class="radio-button_wrapper">
+                                <!-- Option 1 -->
+                                <div class="radio-button">
+                                  <div class="radio-button_inner">
+                                    <input class="radio-button_input" type="radio" name="freeDistance" id="fd-5kms" value="5" checked>
+                                    <label class="radio-button_label" for="fd-5kms">First<br/><span><span class="resultKm" id="5km-radio-filter">720</span>&nbsp;kms</span><br/>free</label>
+                                  </div>
+                                </div>
+
+                                <!-- Option 2 -->
+                                <div class="radio-button">
+                                  <div class="radio-button_inner">
+                                    <input class="radio-button_input" type="radio" name="freeDistance" id="fd-10kms" value="10">
+                                    <label class="radio-button_label" for="fd-10kms">First<br/><span><span class="resultKm" id="10km-radio-filter">1020</span>&nbsp;kms</span><br/>free</label>
+                                  </div>
+                                </div>
+
+                                <!-- Option 3 -->
+                                <div class="radio-button">
+                                  <div class="radio-button_inner">
+                                    <input class="radio-button_input" type="radio" name="freeDistance" id="fd-ulkms" value="ul">
+                                    <label class="radio-button_label" for="fd-ulkms"><span><br/><span class="resultKm" id="ulkm-radio-filter">Unlimited</span>&nbsp;kms</span><br/>free</label>
+                                  </div>
+                                </div>
+                            </div><br/><span class="hr-lite"></span><br/>
+                            <!-------------- Filter One End ------------->
+
+                            <!-------------- Filter Two Start ------------->
+                            <label class="filter-label">Fuel Type</label>
+                            <div class="checkbox-button_wrapper">
+                                <!-- Option 1 -->
+                                <div class="checkbox-button">
+                                  <div class="checkbox-button_inner">
+                                    <br/>
+                                    <label class="checkbox-button_label"><input class="checkbox-button_input" type="checkbox" name="fuel_type" value="desel"><span>Deseil</span></label>
+                                  </div>
+                                </div>
+
+                                <!-- Checkbox 2 -->
+                                <div class="checkbox-button">
+                                  <div class="checkbox-button_inner">
+                                    <br/>
+                                    <label class="checkbox-button_label"><input class="checkbox-button_input" type="checkbox" name="fuel_type" value="petrol"><span>Petrol</span></label>
+                                  </div>
+                                </div>
+                            </div><br/>
+                            <!-------------- Filter Two End ------------->
+
+
+
+                            <!-------------- Filter Three Start ------------->
+                             <label class="filter-label">Car Type</label>
+                             <div class="checkbox-button_wrapper">
+                                 <!-- Checkbox 1 -->
+                                 <div class="checkbox-button">
+                                   <div class="checkbox-button_inner">
+                                     <br/>
+                                     <label class="checkbox-button_label"><input class="checkbox-button_input" type="checkbox" name="car_type" value="hetchback"><span>Hetchback</span></label>
+                                   </div>
+                                 </div>
+
+                                 <!-- Checkbox 2 -->
+                                 <div class="checkbox-button">
+                                   <div class="checkbox-button_inner">
+                                     <br/>
+                                     <label class="checkbox-button_label"><input class="checkbox-button_input" type="checkbox" name="car_type" value="sedan"><span>Sedan</span></label>
+                                   </div>
+                                 </div>
+                                 <!-- Checkbox 3 -->
+                                 <div class="checkbox-button">
+                                    <div class="checkbox-button_inner">
+                                      <br/>
+                                      <label class="checkbox-button_label"><input class="checkbox-button_input" type="checkbox" name="car_type" value="suv"><span>SUV</span></label>
+                                    </div>
+                                  </div>
+
+                                  <!-- Checkbox 4 -->
+                                  <div class="checkbox-button">
+                                    <div class="checkbox-button_inner">
+                                      <br/>
+                                      <label class="checkbox-button_label"><input class="checkbox-button_input" type="checkbox" name="car_type" value="luxary"><span>Luxary</span></label>
+                                    </div>
+                                  </div>
+                            </div><br/>
+
+                            <!-------------- Filter Three End ------------->
+
+                            <!-------------- Filter Four Start ------------->
+                            <label class="filter-label">Transmission Type</label>
+                            <div class="checkbox-button_wrapper">
+                                <!-- Option 1 -->
+                                <div class="checkbox-button">
+                                  <div class="checkbox-button_inner">
+                                    <br/>
+                                    <label class="checkbox-button_label"><input class="checkbox-button_input" type="checkbox" name="gear_type" value="manual"><span>Manual</span></label>
+                                  </div>
+                                </div>
+
+                                <!-- Checkbox 2 -->
+                                <div class="checkbox-button">
+                                  <div class="checkbox-button_inner">
+                                    <br/>
+                                    <label class="checkbox-button_label"><input class="checkbox-button_input" type="checkbox" name="gear_type" value="automatic"><span>Automatic</span></label>
+                                  </div>
+                                </div>
+                            </div><br/>
+                            <!-------------- Filter Four End ------------->
+
+                            <br/>
+                            <!-- <input type="submit" value="Submit"> -->
+                        </form>
+                    </div>
+                </div>
+                <!-- ----------column 2-------------- -->
+                <div class="car-search-main col2">
+                    <div class="chossen-timings_wraper">
+                        <div class="chossen-timings">
+                            <div class="timing_wraper">
+                                <div class="full-date_wraper">
+                                    <span>Start Date</span>
+                                    <div>
+                                        <div class="date_wraper"><span id="start_date">05</span>&nbsp;<span id="start_month">Oct</span></div>
+                                        <div class="date-time_wraper">
+                                            <div class="day_wraper"><span id="start_day">Mon</span></div>&ensp;
+                                            <div><span id="start_hrs">09</span>&nbsp;:&nbsp;<span id="start_mins">30</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div>&ensp;&ensp;</div> -->
+                            <div class="timing_wraper">
+                                <div class="full-date_wraper">
+                                    <span>End Date</span>
+                                    <div>
+                                        <div class="date_wraper"><span id="end_date">08</span>&nbsp;<span id="end_month">Oct</span></div>
+                                        <div class="date-time_wraper">
+                                            <div class="day_wraper"><span id="end_day">Thu</span></div>&ensp;
+                                            <div><span id="end_hrs">20</span>&nbsp;:&nbsp;<span id="end_mins">00</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="search-results_wraper">
+                      <div class="search-results">
+                        <h2>Available Cars</h2>
+                        <div class="search-car-results">
+                          <div class="car-result">
+                            <h3>Swift Dezire</h3>
+                            <div class="car-details">
+                              <img src="images/swift-dezire.jpg" alt="">
+                              <div class="car-sub-details">
+                                <span><i class="fas fa-gas-pump"></i>&ensp;Deseil</span>
+                                <span><img src="images/seat-icon.png" alt="">&ensp;5 Seater</span>
+                                <span><img src="images/gear-shift.png" alt="">&ensp;Manual</span>
+                                <!-- <span><i class="fas fa-suitcase-rolling"></i>&ensp;2 Bags</span> -->
+                              </div>
+                            </div>
+                            <div class="car-rental-details">
+                              <div class="rental-price">
+                                <span>&#x20B9;</span>&nbsp;1200<br/><span>Excess Rs. 8/km</span>
+                              </div>
+                              <div class="booking-button"><form method="POST"><input type="submit" value="Book Now"></form></div>
+                            </div>
+                          </div>
+
+
+
+
+
+
+
+
+
+                          <div class="car-result">
+                            <h3>Swift Dezire</h3>
+                            <div class="car-details">
+                              <img src="images/swift-dezire.jpg" alt="">
+                              <div class="car-sub-details">
+                                <span><i class="fas fa-gas-pump"></i>&ensp;Deseil</span>
+                                <span><img src="images/seat-icon.png" alt="">&ensp;5 Seater</span>
+                                <span><img src="images/gear-shift.png" alt="">&ensp;Manual</span>
+                                <!-- <span><i class="fas fa-suitcase-rolling"></i>&ensp;2 Bags</span> -->
+                              </div>
+                            </div>
+                            <div class="car-rental-details">
+                              <div class="rental-price">
+                                <span>&#x20B9;</span>&nbsp;1200<br/><span>Excess Rs. 8/km</span>
+                              </div>
+                              <div class="booking-button"><form method="POST"><input type="submit" value="Book Now"></form></div>
+                            </div>
+                          </div><div class="car-result">
+                            <h3>Swift Dezire</h3>
+                            <div class="car-details">
+                              <img src="images/swift-dezire.jpg" alt="">
+                              <div class="car-sub-details">
+                                <span><i class="fas fa-gas-pump"></i>&ensp;Deseil</span>
+                                <span><img src="images/seat-icon.png" alt="">&ensp;5 Seater</span>
+                                <span><img src="images/gear-shift.png" alt="">&ensp;Manual</span>
+                                <!-- <span><i class="fas fa-suitcase-rolling"></i>&ensp;2 Bags</span> -->
+                              </div>
+                            </div>
+                            <div class="car-rental-details">
+                              <div class="rental-price">
+                                <span>&#x20B9;</span>&nbsp;1200<br/><span>Excess Rs. 8/km</span>
+                              </div>
+                              <div class="booking-button"><form method="POST"><input type="submit" value="Book Now"></form></div>
+                            </div>
+                          </div><div class="car-result">
+                            <h3>Swift Dezire</h3>
+                            <div class="car-details">
+                              <img src="images/swift-dezire.jpg" alt="">
+                              <div class="car-sub-details">
+                                <span><i class="fas fa-gas-pump"></i>&ensp;Deseil</span>
+                                <span><img src="images/seat-icon.png" alt="">&ensp;5 Seater</span>
+                                <span><img src="images/gear-shift.png" alt="">&ensp;Manual</span>
+                                <!-- <span><i class="fas fa-suitcase-rolling"></i>&ensp;2 Bags</span> -->
+                              </div>
+                            </div>
+                            <div class="car-rental-details">
+                              <div class="rental-price">
+                                <span>&#x20B9;</span>&nbsp;1200<br/><span>Excess Rs. 8/km</span>
+                              </div>
+                              <div class="booking-button"><form method="POST"><input type="submit" value="Book Now"></form></div>
+                            </div>
+                          </div><div class="car-result">
+                            <h3>Swift Dezire</h3>
+                            <div class="car-details">
+                              <img src="images/swift-dezire.jpg" alt="">
+                              <div class="car-sub-details">
+                                <span><i class="fas fa-gas-pump"></i>&ensp;Deseil</span>
+                                <span><img src="images/seat-icon.png" alt="">&ensp;5 Seater</span>
+                                <span><img src="images/gear-shift.png" alt="">&ensp;Manual</span>
+                                <!-- <span><i class="fas fa-suitcase-rolling"></i>&ensp;2 Bags</span> -->
+                              </div>
+                            </div>
+                            <div class="car-rental-details">
+                              <div class="rental-price">
+                                <span>&#x20B9;</span>&nbsp;1200<br/><span>Excess Rs. 8/km</span>
+                              </div>
+                              <div class="booking-button"><form method="POST"><input type="submit" value="Book Now"></form></div>
+                            </div>
+                          </div><div class="car-result">
+                            <h3>Swift Dezire</h3>
+                            <div class="car-details">
+                              <img src="images/swift-dezire.jpg" alt="">
+                              <div class="car-sub-details">
+                                <span><i class="fas fa-gas-pump"></i>&ensp;Deseil</span>
+                                <span><img src="images/seat-icon.png" alt="">&ensp;5 Seater</span>
+                                <span><img src="images/gear-shift.png" alt="">&ensp;Manual</span>
+                                <!-- <span><i class="fas fa-suitcase-rolling"></i>&ensp;2 Bags</span> -->
+                              </div>
+                            </div>
+                            <div class="car-rental-details">
+                              <div class="rental-price">
+                                <span>&#x20B9;</span>&nbsp;1200<br/><span>Excess Rs. 8/km</span>
+                              </div>
+                              <div class="booking-button"><form method="POST"><input type="submit" value="Book Now"></form></div>
+                            </div>
+                          </div><div class="car-result">
+                            <h3>Swift Dezire</h3>
+                            <div class="car-details">
+                              <img src="images/swift-dezire.jpg" alt="">
+                              <div class="car-sub-details">
+                                <span><i class="fas fa-gas-pump"></i>&ensp;Deseil</span>
+                                <span><img src="images/seat-icon.png" alt="">&ensp;5 Seater</span>
+                                <span><img src="images/gear-shift.png" alt="">&ensp;Manual</span>
+                                <!-- <span><i class="fas fa-suitcase-rolling"></i>&ensp;2 Bags</span> -->
+                              </div>
+                            </div>
+                            <div class="car-rental-details">
+                              <div class="rental-price">
+                                <span>&#x20B9;</span>&nbsp;1200<br/><span>Excess Rs. 8/km</span>
+                              </div>
+                              <div class="booking-button"><form method="POST"><input type="submit" value="Book Now"></form></div>
+                            </div>
+                          </div>
+
+
+
+                          <div class="car-result">
+                            <h3>Honda Accord</h3>
+                            <div class="car-details">
+                              <img src="images/swift-dezire.jpg" alt="">
+                              <div class="car-sub-details">
+                                <span><i class="fas fa-gas-pump"></i>&ensp;Deseil</span>
+                                <span><img src="images/seat-icon.png" alt="">&ensp;5 Seater</span>
+                                <span><img src="images/gear-shift.png" alt="">&ensp;Manual</span>
+                                <!-- <span><i class="fas fa-suitcase-rolling"></i>&ensp;2 Bags</span> -->
+                              </div>
+                            </div>
+                            <div class="car-rental-details">
+                              <div class="rental-price"><span>&#x20B9;</span>&nbsp;1200<br/><span>Excess Rs. 8/km</span></div>
+                              <div class="booking-button"><form method="POST"><input type="submit" value="Sold Out" class="sold-out"></form></div>
+                            </div>
+                          </div>
+                          <div class="car-result">
+                            <h3>Honda Accord</h3>
+                            <div class="car-details">
+                              <img src="images/swift-dezire.jpg" alt="">
+                              <div class="car-sub-details">
+                                <span><i class="fas fa-gas-pump"></i>&ensp;Deseil</span>
+                                <span><img src="images/seat-icon.png" alt="">&ensp;5 Seater</span>
+                                <span><img src="images/gear-shift.png" alt="">&ensp;Manual</span>
+                                <!-- <span><i class="fas fa-suitcase-rolling"></i>&ensp;2 Bags</span> -->
+                              </div>
+                            </div>
+                            <div class="car-rental-details">
+                              <div class="rental-price"><span>&#x20B9;</span>&nbsp;1200<br/><span>Excess Rs. 8/km</span></div>
+                              <div class="booking-button"><form method="POST"><input type="submit" value="Sold Out" class="sold-out"></form></div>
+                            </div>
+                          </div>
+                          <div class="car-result">
+                            <h3>Honda Accord</h3>
+                            <div class="car-details">
+                              <img src="images/swift-dezire.jpg" alt="">
+                              <div class="car-sub-details">
+                                <span><i class="fas fa-gas-pump"></i>&ensp;Deseil</span>
+                                <span><img src="images/seat-icon.png" alt="">&ensp;5 Seater</span>
+                                <span><img src="images/gear-shift.png" alt="">&ensp;Manual</span>
+                                <!-- <span><i class="fas fa-suitcase-rolling"></i>&ensp;2 Bags</span> -->
+                              </div>
+                            </div>
+                            <div class="car-rental-details">
+                              <div class="rental-price"><span>&#x20B9;</span>&nbsp;1200<br/><span>Excess Rs. 8/km</span></div>
+                              <div class="booking-button"><form method="POST"><input type="submit" value="Sold Out" class="sold-out"></form></div>
+                            </div>
+                          </div>
+                          <div class="car-result">
+                            <h3>Honda Accord</h3>
+                            <div class="car-details">
+                              <img src="images/swift-dezire.jpg" alt="">
+                              <div class="car-sub-details">
+                                <span><i class="fas fa-gas-pump"></i>&ensp;Deseil</span>
+                                <span><img src="images/seat-icon.png" alt="">&ensp;5 Seater</span>
+                                <span><img src="images/gear-shift.png" alt="">&ensp;Manual</span>
+                                <!-- <span><i class="fas fa-suitcase-rolling"></i>&ensp;2 Bags</span> -->
+                              </div>
+                            </div>
+                            <div class="car-rental-details">
+                              <div class="rental-price"><span>&#x20B9;</span>&nbsp;1200<br/><span>Excess Rs. 8/km</span></div>
+                              <div class="booking-button"><form method="POST"><input type="submit" value="Sold Out" class="sold-out"></form></div>
+                            </div>
+                          </div>
+                          <div class="car-result">
+                            <h3>Honda Accord</h3>
+                            <div class="car-details">
+                              <img src="images/swift-dezire.jpg" alt="">
+                              <div class="car-sub-details">
+                                <span><i class="fas fa-gas-pump"></i>&ensp;Deseil</span>
+                                <span><img src="images/seat-icon.png" alt="">&ensp;5 Seater</span>
+                                <span><img src="images/gear-shift.png" alt="">&ensp;Manual</span>
+                                <!-- <span><i class="fas fa-suitcase-rolling"></i>&ensp;2 Bags</span> -->
+                              </div>
+                            </div>
+                            <div class="car-rental-details">
+                              <div class="rental-price"><span>&#x20B9;</span>&nbsp;1200<br/><span>Excess Rs. 8/km</span></div>
+                              <div class="booking-button"><form method="POST"><input type="submit" value="Sold Out" class="sold-out"></form></div>
+                            </div>
+                          </div>
+
+                          <div class="car-result">
+                            <h3>Honda Accord</h3>
+                            <div class="car-details">
+                              <img src="images/swift-dezire.jpg" alt="">
+                              <div class="car-sub-details">
+                                <span><i class="fas fa-gas-pump"></i>&ensp;Deseil</span>
+                                <span><img src="images/seat-icon.png" alt="">&ensp;5 Seater</span>
+                                <span><img src="images/gear-shift.png" alt="">&ensp;Manual</span>
+                                <!-- <span><i class="fas fa-suitcase-rolling"></i>&ensp;2 Bags</span> -->
+                              </div>
+                            </div>
+                            <div class="car-rental-details">
+                              <div class="rental-price"><span>&#x20B9;</span>&nbsp;1200<br/><span>Excess Rs. 8/km</span></div>
+                              <div class="booking-button"><form method="POST"><input type="submit" value="Sold Out" class="sold-out"></form></div>
+                            </div>
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- ----------column 2 End-------------- -->
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- -----------Start of Footer--------- -->
+    <div class="footer">
+        <!-- footer Main Items -->
+        <section class="ftr-main">
+            <div class="ftr-main-item">
+              <h2 class="ftr-title"></h2>
+              <ul class="ftr-main-links">
+                <li class="responsive"><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Policies</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+            <div class="ftr-main-item">
+              <h2 class="ftr-title">Contact us</h2>
+              <ul>
+                <li>&ensp;<i class="fas fa-phone-alt"></i>&ensp;<a href="tel:9182126623">+91 - 9182126623<span class="un-select"></span></a></li>
+                <li>&ensp;<i class="fas fa-phone-alt"></i>&ensp;<a href="tel:9182126625">+91 - 9182126625</a></li>
+                <br/>
+                <li>&ensp;<i class="fas fa-envelope"></i>&ensp;suport@zopamo.com</li>
+              </ul>
+            </div>
+            <div class="ftr-main-item">
+              <h2 class="ftr-title">Office Address</h2>
+              <ul>
+                <li>&ensp;Bandlapotha Veedi, </li>
+                <li>&ensp;Karnool Road, </li>
+                <li>&ensp;Ongole - 521364</li>
+              </ul>
+            </div>
+            <div class="ftr-main-item">
+              <h2 class="ftr-title">Stay Connected</h2>
+              <p>Subscribe to our newsletter to get our latest news.</p>
+              <form>
+                <input type="email" name="email" placeholder="Enter email address">
+                <input type="submit" value="Subscribe">
+              </form>
+            </div>
+        </section>
+
+        <p class="copyright un-select">2020 &copy; Zopamo &middot; All Rights Reserved</p>
+    </div>
+    <!-- ------------End of Footer------------ -->
+    <script src="/script/global-script.js"></script>
+
+</body>
+</html>

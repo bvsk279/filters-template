@@ -1,0 +1,281 @@
+.rental-search-box{
+    width: 450px;
+    background-color: #F9F9F9;
+    /* height: 500px; */
+    color: #000;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+.form-selector{
+    height: 65px;
+    background-color: #f1f1f1;
+    /* overflow: hidden; */
+    
+}
+.form-sel-sec{
+    width: 50%;
+    
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 20px;
+    z-index: 40;    
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom: none;
+    background-color:  #faac40;
+}
+.form-sel-sec.active{
+    box-shadow: none;
+    z-index: 10;  
+    box-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.25);
+    cursor: default;
+    background-color: #cbfdff;
+}
+
+.form-sel-sec span{
+    font-weight: 400;
+    font-size: 15px;
+}
+.form-sel-sec.one{
+    float: left;
+
+
+    
+}
+.form-sel-sec.two{
+    float: right;
+}
+
+.form-section{
+    padding: 30px 35px;
+    height: 100%;
+    z-index: 20;
+    padding-top:40px;
+    background-color: #cbfdff;
+}
+/* .form-section.sec-one{
+    background-color:  #faac40;
+}
+.form-section.sec-two{
+    background-color:  #cbfdff;
+} */
+.form-section form label{
+    font-size: 17px;
+    padding-bottom: 3px;
+    opacity: 0.95;
+    
+}
+.form-section form input, .form-section form select{
+    border: 1px solid #8a8a8a;
+    font-size: 1.1em;
+    padding: 10px 10px;
+    background-color: #fcfcfc;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #181818;
+    border-radius: 3px;
+
+}
+.form-section form select{
+    position: relative;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: no-repeat;
+    background-image:url('../images/downarrow.png');
+    background-position: 98% 50%;
+    background-color: #fcfcfc;
+    
+}
+.form-section form select>option{
+    height: 200px;
+}
+
+
+.Date-Time{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position: relative;
+    
+}
+.Date-Time div{
+    justify-content: space-between;  
+    display: flex;
+    /* width: 100%; */
+    position: relative;
+}
+.Date-Time div:first-child{
+    margin-right: 15px;
+
+}
+.Date-Time div:first-child input{
+    width: 210px;
+}
+
+.Date-Time div:first-child i{
+    position: absolute;
+    font-size: 1.2em;
+    opacity: 0.85;
+    right: 0px;
+    top: 0px;
+    padding: 0px 10px;
+    padding-top: 10px;
+    border: 1px solid #8a8a8a;
+    border-left: 1px solid #8a8a8a9f;
+    background-color: #b8b8b865;
+    height: 100%;
+}
+.Date-Time div:nth-child(2){
+    justify-content: flex-start;
+    width: 100%;
+}
+.Date-Time div:nth-child(2) select:nth-child(1){
+    border-right: 1px dashed #747474;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.Date-Time div:nth-child(2) select:nth-child(2){
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.form-section form .Date-Time select{
+    background-position: 90% 50%;
+    padding-left: 15px;
+}
+
+.form-section input[type="submit"]{
+    width: 100%;
+    cursor: pointer;
+    background-color: #112655;
+    color: #fcfcfc;
+    font-weight: 400;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+
+    background: #3a6186;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-sec-hidden{
+    visibility: hidden;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content-sub-head{
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+.box-links{
+    margin-top: 20px;
+    display: inline-flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+.box-links a{
+    text-decoration: none;
+}
+.box-links a:hover,.box-links a:active{
+    border: 2px solid #FB9825;
+    background-color: #aad9ff;
+    transition: 0.1s ease-in-out;
+}
+.box-link{
+    position: relative;
+    background-color: #fdaf3b;
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+
+    height: 130px;
+    width: 230px;
+    color: #000;
+    border-radius: 1px;
+    flex-grow: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.instructs{
+    
+    width: 80%;
+    text-align: justify;
+    font-size: 1.1em;
+}
+.instructs h3{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.instructs p{
+    font-family: 'Lato', serif;
+    font-weight: 300;
+}
+

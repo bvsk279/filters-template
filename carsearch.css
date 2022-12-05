@@ -1,0 +1,423 @@
+.body-content{
+    margin: 0px 10%;
+    margin-bottom: 50px;
+}
+.searchcars{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin: 20px 0%;
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.searchcars .col1{
+    width: 28%;
+    height: 100%;
+    background-color: #fcc;
+}
+.searchcars .col2{
+    width: 72%;
+    height: 100%;
+    background-color: rgb(173, 173, 173);
+
+}
+.car-search-filters{
+    position: relative;
+}
+
+.filter-section{
+    margin: 20px 25px;
+    background-color: rgb(240, 255, 228);
+    padding: 30px 20px;
+    height: 100%;
+    margin: auto;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+}
+
+.filter-section h2{
+    text-align: center;
+    color: rgb(15, 15, 15);
+}
+.filter-section .filter-hr{
+    height: 0.1em;
+    background-color: #444;
+    /* border: 0.01px solid #4444; */
+}
+.filter-section .filter-label{
+    font-size: 20px;
+}
+
+.radio-button_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.radio-button {
+	box-sizing: border-box;
+	flex: 1 0 30%;
+	padding: 0.7em 0.7em 0 0;
+}
+
+.radio-button_inner {
+	display: flex;
+	position: relative;
+}
+
+input[type="radio"][class="radio-button_input"] {
+	display: block;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	opacity: 0;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+/* input[type="radio"][class="radio-button_input"]:hover + .radio-button_label {
+	border-color: #174082;
+  background-color: #04539427;
+} */
+
+input[type="radio"][class="radio-button_input"]:checked + .radio-button_label {
+	background: #174082;
+	border-color: #174082;
+    color: #FFFFFF;
+    box-shadow: 0 3px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.radio-button_label {
+	border: 2px solid #4286f4;
+	border-radius: 3px;
+	color: #4286f4;
+    display: block;
+    
+    font-weight: 400;
+    font-size: 12px;
+	max-width: 100%;
+	padding: 0.1em 20px;
+	text-align: center;
+	/* text-transform: uppercase; */
+	transition: all 0.1s ease;
+	width: 100%;
+    height: 55px;
+    font-family: "Libre Franklin";
+    background-color: rgba(173, 173, 173, 0.082);
+}
+.radio-button_label .resultKm{
+    font-size: 1.1em;
+    padding: 10px 0px;
+    line-height: 1.4em;
+    
+}
+.radio-button_label>span>span{
+    font-size: 100em;
+}
+
+/* -----------for checkbox----------- */
+
+.checkbox-button_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.checkbox-button {
+	box-sizing: border-box;
+	flex: 1 0 0%;
+	padding: 1em 1em 0 0;
+}
+
+.checkbox-button_inner {
+	display: flex;
+	position: relative;
+}
+
+.checkbox-button_label {
+	border-radius: 3px;
+	color: #4286f4;
+    display: block;
+    
+    font-weight: 400;
+    font-size: 15px;
+	max-width: 100%;
+
+	text-align: center;
+	width: 100%;
+    height: 35px;
+    font-family: "Libre Franklin";
+}
+
+.checkbox-button_label [type="checkbox"]{
+    display: none;
+}
+
+.checkbox-button_label [type="checkbox"] + span {
+    border: 2px solid #4286f4;
+	border-radius: 3px;
+	color: #4286f4;
+    display: block;
+
+	text-align: center;
+	transition: all 0.1s ease;
+    padding: 0.1em 5px;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(173, 173, 173, 0.082);
+}
+.checkbox-button_label [type="checkbox"]:checked + span {
+    background: #174082;
+	border-color: #174082;
+    color: #FFFFFF;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------column two (car search main)---------- */
+.chossen-timings_wraper{
+    background-color: #fcfcfc;
+    width: 100%;
+    height: 80px;
+    padding: 0px 20px;
+    font-family: "Lato";
+    position: relative;
+}
+.chossen-timings{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.chossen-timings>div{
+    /* background-color: #c2c2c2; */
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    flex: 1 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full-date_wraper{
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.full-date_wraper>span{
+    font-size: 18px;
+    color: #222;
+}
+.full-date_wraper>div{
+    background-color: #2297a7;
+    width: 230px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    border: 1px solid rgb(117, 117, 117);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.full-date_wraper>div .date_wraper{
+    border-right: 1px solid #dddddd8f;
+    font-size: 1.2em;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+}
+.full-date_wraper>div .date-time_wraper{
+    width: 100%;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+
+}
+.date-time_wraper>div{
+    display: inline-block;
+}
+.day_wraper{
+    font-weight: 500;
+    /* padding-bottom: 5px; */
+    font-size: 1.1em;
+}
+
+
+
+
+
+/* Additional Styles */
+.hr-lite{
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: 0.5px solid #61616128;
+}
+
+
+
+.search-results_wraper{
+    width: 100%;
+    height: 100%;
+    background-color: #fcfcfc;
+    position: relative;
+}
+.search-results{
+    padding: 20px;
+    /* background-color: #fcc; */
+}
+.search-results h2{
+    color: #000;
+    font-size: 18px;
+
+}
+.search-car-results{
+    display: flex;
+    flex-wrap: wrap;
+
+    position: relative;
+}
+.car-result{
+    height: 240px;
+    position: relative;
+    background-color: #2297a7;
+    border:1px solid #fcfcfc;
+    margin: 15px;
+    width: 30%;
+    max-width: 47.5%;
+    flex: 1 0 33%;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    padding: 8px;
+    overflow: hidden;
+}
+.car-result>h3{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 3px;
+
+}
+.car-result>.car-details{
+    border: 1px solid #fcfcfcd0;
+    width: 100%;
+    height: 145px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(154, 226, 255);
+}
+.car-result img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+    text-align: center;
+}
+.car-result .car-sub-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    bottom: 0px;
+    padding: 5px 0px;
+    font-size: 16px;
+    font-weight: 300;
+    overflow: hidden;
+}
+.car-sub-details>span{
+    width: 100%;
+    border-left: 1px solid rgba(255, 255, 255, 0.329);
+    text-align: center;
+
+}
+.car-sub-details>span:first-child{
+    border-left: none;
+}
+
+.car-sub-details>span img,.car-sub-details>span i{
+    width: 18px;
+    font-size: 18px;
+}
+
+.car-sub-details>span i{
+    opacity: 0.9;
+}
+.car-rental-details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 8.5px;
+}
+.car-rental-details>div{
+    border-radius: 3px;
+    min-width: 200px;
+    width: 40%;
+    float: left;
+}
+.car-rental-details>div:nth-child(2) input[type="submit"]{
+    float: right;
+    background-color: #ff9137;
+    background-color: #ffffff;
+    padding: 10px 30px;
+    border: 1px solid #fcfcfc34;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 3px 0 rgba(32, 33, 36, .28);
+}
+.car-rental-details>div:nth-child(2) input[type="submit"].sold-out{
+    border: 1px solid rgb(250, 71, 71);
+    background-color: rgb(247, 247, 247);
+    color:rgb(250, 71, 71);
+    cursor: unset;
+}
+
+.car-rental-details .rental-price{
+    min-width: 100px;
+    height: 45px;
+    background-color: #ffffff;
+    background-color: #dbdbdb;
+    padding: 5px;
+    overflow: hidden;
+    text-align: center;
+    font-family: "Lato";
+    font-size:  18px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #000;
+    box-shadow: 0 1px 2px 0 rgba(32, 33, 36, .28);
+}
+.car-rental-details .rental-price>span>sup{
+    padding-top: 10px;
+}
+.car-rental-details .rental-price>:last-child{
+    font-size:  12px;
+}
+
